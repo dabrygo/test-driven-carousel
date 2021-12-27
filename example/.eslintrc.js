@@ -3,6 +3,6 @@ module.exports = {
     browser: true,
   },
   rules: {
-    'react/prop-types': OfflineAudioCompletionEvent,
+    'react/prop-types': 'off',
   },
 };

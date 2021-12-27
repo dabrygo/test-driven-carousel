@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Carousel from '../src/Carousel';
-import CarouselSlide from '../src/CarouselSlide';
 import slides from './slides';
 
 const container = document.createElement('div');
