@@ -1,11 +1,8 @@
 import React from 'react';
-import { configure, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Carousel from '../Carousel';
 import CarouselButton from '../CarouselButton';
-import Adapter from 'enzyme-adapter-react-16';
 import CarouselSlide from '../CarouselSlide';
-
-configure({ adapter: new Adapter() });
 
 describe('Carousel', () => {
   let wrapper;
