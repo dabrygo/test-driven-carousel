@@ -45,7 +45,7 @@ describe('Carousel', () => {
       wrapper
         .find(CarouselButton)
         .at(0)
-        .prop('children')
+        .prop('children'),
     ).toBe('Prev');
   });
 
@@ -54,7 +54,7 @@ describe('Carousel', () => {
       wrapper
         .find(CarouselButton)
         .at(1)
-        .prop('children')
+        .prop('children'),
     ).toBe('Next');
   });
 
@@ -94,9 +94,15 @@ describe('Carousel', () => {
   it('renders the current slide as a CarouselSlide', () => {
     let slideProps;
     slideProps = wrapper.find(CarouselSlide).props();
-    expect(slideProps).toEqual(slides[0]);
+    expect(slideProps).toEqual({
+      ...CarouselSlide.defaultProps,
+      ...slides[0],
+    });
     wrapper.setState({ slideIndex: 1 });
     slideProps = wrapper.find(CarouselSlide).props();
-    expect(slideProps).toEqual(slides[1]);
+    expect(slideProps).toEqual({
+      ...CarouselSlide.defaultProps,
+      ...slides[1],
+    });
   });
 });
