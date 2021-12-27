@@ -7,7 +7,7 @@ module.exports = {
   },
   rules: {
     quotes: ['error', 'single', { avoidEscape: true }],
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': ['warn', 'always-multiline'],
   },
   settings: {
     react: {
