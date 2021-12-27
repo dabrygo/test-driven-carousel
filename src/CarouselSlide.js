@@ -5,8 +5,7 @@ const CarouselSlide = ({ imgUrl, description, attribution, ...rest }) => (
   <figure {...rest}>
     <img src={imgUrl} />
     <figcaption>
-      <strong>{`${description}`}</strong>
-      {` ${attribution}`}
+      <strong>{description}</strong> {attribution}
     </figcaption>
   </figure>
 );

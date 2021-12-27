@@ -8,7 +8,7 @@
     "test": "jest",
     "lint": "eslint . && prettier-eslint --list-different **/*.js",
     "format": "prettier-eslint --write **/*.js",
-    "build": "webpack --display-modules --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +26,7 @@
     "eslint": "^5.10.0",
     "eslint-plugin-jest": "^22.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
     "prettier-eslint-cli": "^4.7.1",
     "react-dom": "^16.4.2",
     "webpack": "^4.26.1",
