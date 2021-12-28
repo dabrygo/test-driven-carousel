@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     quotes: ['error', 'single', { avoidEscape: true }],
     'comma-dangle': ['warn', 'always-multiline'],
+    'no-unused-vars': ['error', { varsIgnorePattern: '^_' }],
   },
   settings: {
     react: {
