@@ -13,7 +13,7 @@
     "build": "webpack --config webpack.config.js",
     "dev": "webpack-dev-server --config webpack.config.js --open",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs"
   },
   "keywords": [],
   "author": "",
